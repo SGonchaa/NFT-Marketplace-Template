@@ -1,0 +1,81 @@
+.TrendingCollection {
+  margin-top: 120px;
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  &_cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    .card {
+      img {
+        width: 330px;
+        height: 330px;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(0.95);
+        }
+      }
+    }
+    .card_more_img {
+      display: flex;
+      gap: 20px;
+      img {
+        width: 95px;
+        height: 95px;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(0.95);
+        }
+      }
+      button {
+        width: 95px;
+        height: 95px;
+        background-color: var(--purplecolor);
+        border-radius: 20px;
+        justify-content: center;
+        cursor: pointer;
+        padding: 32px 15px;
+        border: none;
+        color: var(--whitecolor);
+        font-family: "Space Mono", monospace;
+        font-size: 1.375rem;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(0.95);
+        }
+      }
+    }
+    .card_title {
+      color: var(--whitecolor);
+      font-size: 1.375rem;
+      margin-top: 10px;
+      &_name {
+        display: flex;
+        margin-top: 10px;
+        img {
+          width: 22px;
+          height: 22px;
+        }
+        p {
+          font-size: 1rem;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .TrendingCollection_cards > div:last-child {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 834px) {
+  .TrendingCollection_cards > div:nth-child(2) {
+    display: none;
+  }
+}

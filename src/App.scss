@@ -1,0 +1,25 @@
+// Global styles
+:root {
+  --backgroundcolor: rgb(43, 43, 43);
+  --secondarybackgroundcolor: #3b3b3b;
+  --purplecolor: #a259ff;
+  --textcolor: #858584;
+  --whitecolor: #ffff;
+  --textcolor: #858584;
+  --datebgcolor:#3b3b3b80;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: var(--backgroundcolor);
+}
+
+a {
+  text-decoration: none;
+}

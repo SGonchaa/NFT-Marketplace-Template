@@ -1,0 +1,155 @@
+.TopCreators {
+  margin-top: 120px;
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  &_headline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    &_title {
+      margin-right: 90px;
+      width: 703px;
+      color: white;
+      h3 {
+        font-size: 2.375rem;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+      p {
+        margin-top: 5px;
+        font-size: 1.375rem;
+        font-weight: 400;
+        line-height: 35px;
+      }
+    }
+    .view_rankings_btn {
+      button {
+        width: 250px;
+        height: 60px;
+        background-color: transparent;
+        border: 2px solid var(--purplecolor);
+        outline: none;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        color: var(--whitecolor);
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(0.95);
+        }
+        .rocket_icon {
+          color: var(--purplecolor);
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .creators {
+    display: flex;
+    margin-top: 60px;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+    justify-content: center;
+    .creator_card {
+      width: 240px;
+      height: 240px;
+      padding: 20px 0px;
+      position: relative;
+      border-radius: 20px;
+      background-color: var(--secondarybackgroundcolor);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(0.95);
+      }
+      &_top {
+        display: flex;
+        justify-content: center;
+        img {
+          width: 120px;
+        }
+        .creator_card_number {
+          width: 30px;
+          height: 30px;
+          border-radius: 20px;
+          background-color: var(--backgroundcolor);
+          position: absolute;
+          left: 15px;
+          top: 15px;
+          justify-content: center;
+          display: flex;
+          align-items: center;
+          p {
+            font-size: 1rem;
+            font-family: "Space Mono", monospace;
+            color: var(--secondarybackgroundcolor);
+          }
+        }
+      }
+      &_bottom {
+        h5 {
+          color: var(--whitecolor);
+          font-size: 1.375rem;
+          font-weight: 600;
+          margin: 15px 0px;
+          text-align: center;
+        }
+        p {
+          color: var(--textcolor);
+          text-align: center;
+          margin: 15px 0px;
+          color: var(--textcolor);
+        }
+        span {
+          color: var(--whitecolor);
+          font-size: 1rem;
+          font-family: "Space Mono", monospace;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .TopCreators_headline{
+    &_title{
+      width: 700px!important;
+      h3{
+       font-size: 1.75rem!important; 
+      }
+      p{
+        font-size: 1rem!important;
+      }
+    }
+  }
+    .creator_card{
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 330px!important;
+      height: 100px!important;
+      img{
+        width: 60px!important;
+      }
+      &_number{
+        transform: translateX(50%);
+      }
+  }
+}
+
+@media only screen and (max-width: 834px) {
+.view_rankings_btn{
+  button{
+    display: none!important;
+  }
+}
+}
