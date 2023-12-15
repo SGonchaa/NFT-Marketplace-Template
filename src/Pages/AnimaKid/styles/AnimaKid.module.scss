@@ -1,0 +1,223 @@
+.AnimaKid {
+  &_top {
+    background-color: var(--backgroundcolor);
+    img {
+      width: 100%;
+    }
+    .container {
+      margin: auto;
+      width: 80%;
+      position: relative;
+      .avatar_profile {
+        position: absolute;
+        top: -60px;
+        border: 2px solid var(--backgroundcolor);
+        border-radius: 20px;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(0.95);
+        }
+      }
+      .details {
+        padding-top: 100px;
+        display: flex;
+        justify-content: space-between;
+        &_left_part {
+          h2 {
+            color: var(--whitecolor);
+            font-size: 3.188rem;
+            font-weight: 600;
+            margin-bottom: 30px;
+          }
+          .additional_info {
+            gap: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            color: var(--whitecolor);
+            .info {
+              font-size: 1.75rem;
+              font-weight: 700;
+              font-family: "Space Mono", monospace;
+            }
+            .title {
+              font-size: 1.375rem;
+              font-weight: 400;
+            }
+          }
+          .bio_links {
+            .bio {
+                margin-bottom: 30px;
+              h5 {
+                color: var(--textcolor);
+                font-size: 1.375rem;
+                font-weight: 700;
+                font-family: "Space Mono", monospace;
+                margin-bottom: 10px;
+              }
+              p {
+                color: var(--whitecolor);
+                font-size: 1.375rem;
+                font-weight: 400;
+              }
+            }
+          }
+          .links {
+            margin-bottom: 30px;
+            h5 {
+              color: var(--textcolor);
+              font-size: 1.375rem;
+              font-weight: 700;
+              font-family: "Space Mono", monospace;
+              margin-bottom: 10px;
+            }
+            &_logo {
+              display: flex;
+              gap: 10px;
+              img {
+                width: 32px;
+                height: 32px;
+              }
+            }
+          }
+        }
+        &_right_part {
+          display: flex;
+          gap: 20px;
+          button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            height: 60px;
+            gap: 12px;
+            border: none;
+            color: var(--whitecolor);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+              transform: scale(0.95);
+            }
+            &:first-child {
+              background-color: var(--purplecolor);
+              width: 186px;
+            }
+            &:last-child {
+              border: 2px solid var(--purplecolor);
+              background-color: var(--backgroundcolor);
+              width: 148px;
+              .btn_icon{
+                color: var(--purplecolor);
+              }
+            }
+          }
+        }
+      }
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: #858584;
+    }
+    .page_titles {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+      div {
+        width: 50%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--whitecolor);
+        font-size: 1.375rem;
+        font-weight: 600;
+      }
+      & div:first-child {
+        border-bottom: 2px solid #858584;
+      }
+    }
+  }
+  &_bottom{
+    border-bottom: 2px solid var(--backgroundcolor);
+    background-color: var(--secondarybackgroundcolor);
+    .bottom_cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px;
+      .card {
+        width: 330px;
+        height: 469px;
+        padding: 20px 0px;
+        border-radius: 20px;
+        background-color: var(--backgroundcolor);
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(0.95);
+        }
+        &_img_part {
+          border-radius: 20px 20px 0px 0px;
+          height: 290px;
+          img {
+            height: 285px;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+          }
+        }
+        &_info {
+          padding: 15px;
+          .card_info_top {
+            h5 {
+              color: var(--whitecolor);
+              font-size: 1.375rem;
+              margin-bottom: 10px;
+            }
+          }
+          .card_info_artist {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            p {
+              color: var(--whitecolor);
+              font-family: "Space Mono", monospace;
+              font-size: 1rem;
+            }
+          }
+          .card_info_bottom {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            .additional {
+              p {
+                font-size: 0.75rem;
+                color: var(--textcolor);
+                font-family: "Space Mono", monospace;
+              }
+              span {
+                color: var(--whitecolor);
+                font-family: "Space Mono", monospace;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

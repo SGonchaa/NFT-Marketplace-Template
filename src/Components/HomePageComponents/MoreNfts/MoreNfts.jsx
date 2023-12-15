@@ -52,7 +52,7 @@ function MoreNfts() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>2
           </Link>
           <Link to="/TheOrbitans">
             {" "}
