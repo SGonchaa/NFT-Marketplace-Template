@@ -1,0 +1,250 @@
+.TheOrbitians {
+  &_bg_img_part {
+    background-image: url(https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-7@1x.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 80vh;
+  }
+  .container {
+    margin: auto;
+    width: 80%;
+    .details {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      gap: 80px;
+      .left_part {
+        width: 70%;
+        &_header {
+          margin-bottom: 30px;
+          h2 {
+            color: var(--whitecolor);
+            font-size: 3.188rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+          }
+          p {
+            color: var(--textcolor);
+            font-size: 1.375rem;
+            font-weight: 400;
+          }
+        }
+        .created_by {
+          margin-bottom: 30px;
+          h5 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: var(--textcolor);
+            font-family: "Space Mono", monospace;
+            margin-bottom: 10px;
+          }
+          .avatar {
+            display: flex;
+            align-items: center;
+            color: var(--whitecolor);
+            font-size: 1.375rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+              transform: scale(0.95);
+            }
+            img {
+              width: 24px;
+              height: 24px;
+              margin-right: 12px;
+            }
+          }
+        }
+        .description {
+          h5 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: var(--textcolor);
+            font-family: "Space Mono", monospace;
+            margin-bottom: 10px;
+          }
+          p {
+            color: var(--whitecolor);
+            font-size: 1.375rem;
+            font-weight: 400;
+            line-height: 35px;
+            margin-bottom: 30px;
+          }
+        }
+        .details_view_part {
+          margin: 30px 0px;
+          h5 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: var(--textcolor);
+            font-family: "Space Mono", monospace;
+            margin-bottom: 10px;
+          }
+          .view {
+            display: flex;
+            align-items: center;
+            color: var(--whitecolor);
+            font-size: 1.375rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            cursor: pointer;
+          }
+        }
+        .tags {
+          margin-bottom: 40px;
+          h5 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: var(--textcolor);
+            font-family: "Space Mono", monospace;
+          }
+          button {
+            align-items: center;
+            margin-right: 20px;
+            margin-top: 20px;
+            background-color: var(--secondarybackgroundcolor);
+            width: 150px;
+            height: 45px;
+            border: none;
+            border-radius: 20px;
+            padding: 0px 30px;
+            color: var(--whitecolor);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+              transform: scale(0.95);
+            }
+          }
+        }
+      }
+      .right_part {
+        width: 30%;
+        }
+      }
+    }
+   .Artist_headline {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      .Artist_headline_title{
+        margin-top: 80px;
+        width: 703px;
+        color: white;
+        h3 {
+          font-size: 2.375rem;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        p {
+          margin-top: 5px;
+          font-size: 1.375rem;
+          font-weight: 400;
+          line-height: 35px;
+        }
+      }
+      .go_to_btn {
+        button {
+          width: 270px;
+          height: 60px;
+          background-color: transparent;
+          border: 2px solid var(--purplecolor);
+          outline: none;
+          border-radius: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 12px;
+          color: var(--whitecolor);
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: scale(0.95);
+          }
+        .go_to_icon {
+            color: var(--purplecolor);
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .Artist_cards {
+      margin: 60px 0px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 40px;
+      .card {
+        width: 313px;
+        height: 470px;
+        padding: 20px 0px;
+        border-radius: 20px;
+        background-color: var(--secondarybackgroundcolor);
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(0.95);
+        }
+        &_img_part {
+          border-radius: 20px 20px 0px 0px;
+          height: 290px;
+          img {
+            height: 285px;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+          }
+        }
+        &_info {
+          padding: 15px;
+          .card_info_top {
+            h5 {
+              color: var(--whitecolor);
+              font-size: 1.375rem;
+              margin-bottom: 10px;
+            }
+          }
+          .card_info_artist {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            p {
+              color: var(--whitecolor);
+              font-family: "Space Mono", monospace;
+              font-size: 1rem;
+            }
+          }
+          .card_info_bottom {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            .additional {
+              p {
+                font-size: 0.75rem;
+                color: var(--textcolor);
+                font-family: "Space Mono", monospace;
+              }
+              span {
+                color: var(--whitecolor);
+                font-family: "Space Mono", monospace;
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
