@@ -54,7 +54,7 @@ function MoreNfts() {
               </div>
             </div>
           </Link>
-          <Link to="/TheOrbitans">
+          <Link to="/TheOrbitians">
             {" "}
             <div className={style.card}>
               <div className={style.card_img_part}>
@@ -81,7 +81,7 @@ function MoreNfts() {
               </div>
             </div>
           </Link>
-          <Link to="/TheOrbitans">
+          <Link to="/TheOrbitians">
             {" "}
             <div className={style.card}>
               <div className={style.card_img_part}>

@@ -19,9 +19,6 @@
         &_header {
           margin-bottom: 30px;
           h2 {
-            color: var(--whitecolor);
-            font-size: 3.188rem;
-            font-weight: 600;
             margin-bottom: 10px;
           }
           p {
@@ -60,9 +57,6 @@
         .description {
           h5 {
             font-size: 1.375rem;
-            font-weight: 700;
-            color: var(--textcolor);
-            font-family: "Space Mono", monospace;
             margin-bottom: 10px;
           }
           p {
@@ -76,10 +70,6 @@
         .details_view_part {
           margin: 30px 0px;
           h5 {
-            font-size: 1.375rem;
-            font-weight: 700;
-            color: var(--textcolor);
-            font-family: "Space Mono", monospace;
             margin-bottom: 10px;
           }
           .view {
@@ -94,12 +84,6 @@
         }
         .tags {
           margin-bottom: 40px;
-          h5 {
-            font-size: 1.375rem;
-            font-weight: 700;
-            color: var(--textcolor);
-            font-family: "Space Mono", monospace;
-          }
           button {
             align-items: center;
             margin-right: 20px;
@@ -127,17 +111,15 @@
       }
     }
    .Artist_headline {
+    margin-top: 80px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 10px;
       .Artist_headline_title{
-        margin-top: 80px;
         width: 703px;
         color: white;
         h3 {
-          font-size: 2.375rem;
-          font-weight: 600;
           margin-bottom: 5px;
         }
         p {
@@ -209,7 +191,6 @@
           .card_info_top {
             h5 {
               color: var(--whitecolor);
-              font-size: 1.375rem;
               margin-bottom: 10px;
             }
           }

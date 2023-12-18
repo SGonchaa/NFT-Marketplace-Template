@@ -26,10 +26,12 @@ function MagicMashrooms() {
               <Link to="/TheOrbitans">
                 {" "}
                 <div className={style.seenft_btn}>
-                  <button>
-                    <IoEyeOutline className={style.see_icon}></IoEyeOutline>
-                    See NFT
-                  </button>
+                  <Link to="/TheOrbitians">
+                    <button>
+                      <IoEyeOutline className={style.see_icon}></IoEyeOutline>
+                      See NFT
+                    </button>
+                  </Link>
                 </div>
               </Link>
             </div>

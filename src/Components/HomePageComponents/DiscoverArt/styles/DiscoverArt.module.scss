@@ -10,9 +10,6 @@
     width: 510px;
     .discover_title {
       h1 {
-        color: var(--whitecolor);
-        font-size: 4.188rem;
-        font-weight: 600;
         margin: 20px;
       }
       p {
@@ -46,9 +43,6 @@
         &:hover {
           transform: scale(0.95);
         }
-      }
-      a {
-        text-decoration: none;
       }
     }
     .additional_info {

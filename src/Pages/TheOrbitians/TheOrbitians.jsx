@@ -2,12 +2,6 @@ import React from "react";
 import style from "./styles/TheOrbitians.module.scss";
 import Orbitian from "../../Images/orbitianavatar.png";
 import Globe from "../../Images/globe.svg";
-import cardImg1 from "../../Images/morenfts1.png";
-import cardImg2 from "../../Images/morenfts2.png";
-import cardImg3 from "../../Images/morenfts3.png";
-import MoonDancerImg from "../../Images/morenfts11.png";
-import NebulaKid from "../../Images/morenfts22.png";
-import Spaceone from "../../Images/morenfts33.png";
 import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -147,8 +141,7 @@ function TheOrbitians() {
         </div>
         <div className={style.Artist_headline}>
           <div className={style.Artist_headline_title}>
-            <h3>Discover More Nfts</h3>
-            <p>Explore New Trending Nfts</p>
+            <h3>More From This Artist</h3>
           </div>
           <div className={style.go_to_btn}>
             <Link to="/AnimaKid">

@@ -6,7 +6,7 @@
   --textcolor: #858584;
   --whitecolor: #ffff;
   --textcolor: #858584;
-  --datebgcolor:#3b3b3b80;
+  --datebgcolor: #3b3b3b80;
 }
 
 * {
@@ -22,4 +22,35 @@ body {
 
 a {
   text-decoration: none;
+}
+
+h1 {
+  color: var(--whitecolor);
+  font-size: 4.188rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 3.188rem;
+  font-weight: 600;
+  color: var(--whitecolor);
+}
+
+h3 {
+  font-size: 2.375rem;
+  font-weight: 600;
+  line-height: 46px;
+  color: var(--whitecolor);
+}
+
+h5 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--textcolor);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #858584;
 }
