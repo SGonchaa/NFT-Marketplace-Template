@@ -1,39 +1,121 @@
-.Rankings{
-    &_top{
+.Rankings {
+  .container {
+    margin: auto;
+    width: 80%;
+    .Rankings_top {
       background-color: var(--backgroundcolor);
-      .container{
-        margin: auto;
-        width: 80%;
-      } 
-      &_header{
+      .Rankings_top_header {
         padding: 80px 0px;
         color: var(--whitecolor);
-        p{
-            font-size: 1.375rem;
-            font-weight: 400;
-            margin-top: 10px;
-        }
-      }
-      .page_titles{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        margin: auto;
-        div{
-          width: 50%;
-          height: 60px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: var(--textcolor);
+        p {
           font-size: 1.375rem;
-          font-weight: 600;
-          
-        }
-        & div:first-child{
-          border-bottom: 2px solid #858584;
+          font-weight: 400;
+          margin-top: 10px;
         }
       }
     }
+    .page_titles {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 80%;
+      margin: auto;
+      div {
+        width: 50%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--textcolor);
+        font-size: 1.375rem;
+        font-weight: 600;
+      }
+      & div:first-child {
+        border-bottom: 2px solid #858584;
+      }
+    }
+    .Rankings_bottom {
+      padding: 40px 0px;
+      .tables_header {
+        padding: 20px;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid var(--secondarybackgroundcolor);
+        border-radius: 20px;
+        div {
+          font-family: "Space Mono", monospace;
+          font-size: 1rem;
+          color: var(--textcolor);
+          font-weight: 400;
+        }
+        &_left_part {
+          width: 40%;
+          span {
+            margin-right: 10px;
+          }
+        }
+        &_right_part {
+          width: 60%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      .tables_row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: var(--secondarybackgroundcolor);
+        border-radius: 20px;
+        gap: 15px;
+        padding: 20px;
+        margin-top: 20px;
+        &_left_part {
+          width: 40%;
+          display: flex;
+          justify-content: space-between;
+          span {
+            background-color: var(--backgroundcolor);
+            border-radius: 20px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+            color: var(--textcolor);
+          }
+          .artist {
+            display: flex;
+            align-items: center;
+            img {
+              width: 60px;
+              height: 60px;
+              margin-right: 20px;
+            }
+            h5 {
+              color: var(--whitecolor);
+              font-size: 1.375rem;
+              font-weight: 600;
+            }
+          }
+        }
+        &_right_part {
+          display: flex;
+          justify-content: space-between;
+          width: 60%;
+          div {
+            font-family: "Space Mono", monospace;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--whitecolor);
+          }
+        }
+      }
+    }
+  }
 }
