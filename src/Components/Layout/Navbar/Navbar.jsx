@@ -1,9 +1,9 @@
 import React from "react";
 import style from "./styles/Navbar.module.scss";
+import { Link } from "react-router-dom";
 import Logo from "../../../Images/page-logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoPersonOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   return (

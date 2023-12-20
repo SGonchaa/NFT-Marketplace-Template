@@ -1,8 +1,8 @@
 import React from "react";
 import style from "./styles/DiscoverArt.module.scss";
+import { Link } from "react-router-dom";
 import gifImage from "../../../Images/gifimage.gif";
 import { LiaRocketSolid } from "react-icons/lia";
-import { Link } from "react-router-dom";
 
 function Discover() {
   return (

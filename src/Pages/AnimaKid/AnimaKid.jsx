@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./styles/AnimaKid.module.scss";
-import { BiCopy } from "react-icons/bi";
-import { FaPlus } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+import { AnimaKidData } from "./meta/AnimaKidData";
 import AnimakidBg from "../../Images/animakidbg.png";
 import AnimakidAvatar from "../../Images/animakidavatar.png";
 import Globe from "../../Images/globe.svg";
@@ -9,83 +9,11 @@ import Anima from "../../Images/anima.svg";
 import YouTube from "../../Images/youtube.svg";
 import Twitter from "../../Images/twitter.svg";
 import Instagram from "../../Images/instagram.svg";
-import { Link } from "react-router-dom";
+import { BiCopy } from "react-icons/bi";
+import { FaPlus } from "react-icons/fa6";
+
 
 function AnimaKid() {
-  var data = [
-    {
-      name: "Distant Galaxy",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-5@2x.png",
-      person: "Animakid",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png",
-    },
-    {
-      name: "Life On Edena",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-6@2x.png",
-      person: "Animakid",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png",
-    },
-    {
-      name: "Astrofiction",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-86@2x.png",
-      person: "Animakid",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png",
-    },
-    {
-      name: "Cryptocity",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-87@2x.png",
-      person: "Animakid",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png",
-    },
-    {
-      name: "Colorfuldog 0524",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-88@2x.png",
-      person: "Animakid",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png",
-    },
-    {
-      name: "Space Tales",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-89@2x.png",
-      person: "Animakid",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png",
-    },
-    {
-      name: "Cherry Blossom Girl 037",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-90@2x.png",
-      person: "Animakid",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png",
-    },
-    {
-      name: "Dancing Robots 0987",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-91@2x.png",
-      person: "Animakid",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png",
-    },
-    {
-      name: "Icecream Ape",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-92@2x.png",
-      person: "Animakid",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-33@2x.png",
-    },
-  ];
   return (
     <div className={style.AnimaKid}>
       <div className={style.AnimaKid_top}>
@@ -149,7 +77,7 @@ function AnimaKid() {
       </div>
       <div className={style.AnimaKid_bottom}>
         <div className={style.bottom_cards}>
-          {data.map((card) => (
+          {AnimaKidData.map((card) => (
             <Link to="/TheOrbitans">
               {" "}
               <div className={style.card}>

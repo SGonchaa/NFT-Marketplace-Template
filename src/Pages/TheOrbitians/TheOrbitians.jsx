@@ -1,85 +1,12 @@
 import React from "react";
 import style from "./styles/TheOrbitians.module.scss";
+import { Link } from "react-router-dom";
+import { TheOrbitiansData } from "./meta/TheOrbitiansData";
 import Orbitian from "../../Images/orbitianavatar.png";
 import Globe from "../../Images/globe.svg";
-import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 function TheOrbitians() {
-  var data = [
-    {
-      name: "Foxy Life",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-8@2x.png",
-      person: "Orbitian",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-43@2x.png",
-    },
-    {
-      name: "Cat From Future",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-9@2x.png",
-      person: "Orbitian",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-43@2x.png",
-    },
-    {
-      name: "Psycho Dog",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-10@2x.png",
-      person: "Orbitian",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-43@2x.png",
-    },
-    {
-      name: "Designer Bear",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-1@2x.png",
-      person: "Orbitian",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-43@2x.png",
-    },
-    {
-      name: "Dancing Robot 0375",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-93@2x.png",
-      person: "Orbitian",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-43@2x.png",
-    },
-    {
-      name: "Dancing Robot 0356",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-91@2x.png",
-      person: "Orbitian",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-43@2x.png",
-    },
-    {
-      name: "Dancing Robot 0321",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-68@2x.png",
-      person: "Orbitian",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-43@2x.png",
-    },
-    {
-      name: "Dancing Robot 0512",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-12@2x.png",
-      person: "Orbitian",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-43@2x.png",
-    },
-    {
-      name: "Dancing Robot 0024",
-      img:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/image-placeholder-96@2x.png",
-      person: "Orbitian",
-      avatar:
-        "https://cdn.animaapp.com/projects/63aaf7e2426e9824f0350c11/releases/63aaf8f2426e9824f0350c13/img/avatar-placeholder-43@2x.png",
-    },
-  ];
   return (
     <div className={style.TheOrbitians}>
       <div className={style.TheOrbitians_bg_img_part}></div>
@@ -155,7 +82,7 @@ function TheOrbitians() {
           </div>
         </div>
         <div className={style.Artist_cards}>
-          {data.map((card) => (
+          {TheOrbitiansData.map((card) => (
             <div className={style.card}>
               <div className={style.card_img_part}>
                 <img src={card.img} alt="" />
