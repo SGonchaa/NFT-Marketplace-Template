@@ -10,7 +10,10 @@ function Navbar() {
     <div className={style.navbar}>
       <div className={style.container}>
         <div className={style.navbar_left_part}>
-          <img src={Logo} alt="" />
+          <Link to="/">
+            {" "}
+            <img src={Logo} alt="" />
+          </Link>
         </div>
         <div className={style.navbar_right_part}>
           <Link to="/MarketPlace">
