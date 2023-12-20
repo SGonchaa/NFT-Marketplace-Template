@@ -80,7 +80,7 @@ function MarketPlace() {
           </div>
         ) : (
           <div className={style.bottom_cards}>
-            {data.slice(6, !status ? 12 : data.length).map((card) => (
+            {MarketPlaceData.slice(6, !status ? 12 : MarketPlaceData.length).map((card) => (
               <Link to="/TheOrbitans">
                 {" "}
                 <div className={style.card}>
